@@ -1,0 +1,6 @@
+env
+**/*.pyc
+media
+.DS_Store
+*.sqlite3
+*se
