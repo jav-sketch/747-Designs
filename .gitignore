@@ -2,5 +2,7 @@ env
 **/*.pyc
 media
 .DS_Store
-*.sqlite3
+db.sqlite3
+.vsscode/settings.json
+.history
 settings.py 
