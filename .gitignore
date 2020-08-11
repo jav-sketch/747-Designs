@@ -3,6 +3,6 @@ env
 media
 .DS_Store
 db.sqlite3
-.vsscode/settings.json
+.vscode/settings.json
 .history
 settings.py 
