@@ -5,4 +5,4 @@ media
 db.sqlite3
 .vscode/settings.json
 .history
-settings.py 
+core/core/settings.py
