@@ -3,4 +3,4 @@ env
 media
 .DS_Store
 *.sqlite3
-*settings.py 
+settings.py 
