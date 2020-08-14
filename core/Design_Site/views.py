@@ -4,10 +4,10 @@ from django.views.generic import View
 from .models import *
 # Create your views here.
 
-# def index(request):
-#     return render(request, "index.html")
+def index(request):
+    return render(request, "index.html")
     
 
-class HomeView(View):
-    model = Customer
-    template_name = "index.html"
+# class Home(View):
+#     model = Customer
+#     template_name = "index.html"
