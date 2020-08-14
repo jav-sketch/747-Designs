@@ -6,10 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <title>747 Designs|Home</title>
+    <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>{% block head_title %} {% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/boostrap.min.css' %}">
+
+    <title>{% block head_title %}{% endblock %}</title>
   </head>
 
   <body>
@@ -17,8 +21,16 @@
     {% include 'nav.html' %}
 
       {% block content %}
-     
 
       {% endblock %}
+
+     <!--Scripts--> 
+     {% include "scripts.html" %} 
+
+     {% block extra_scripts %}
+     {% endblock %}
+
+     <!--footer--> 
+     {% include "footer.html" %} 
   </body>
 </html>
