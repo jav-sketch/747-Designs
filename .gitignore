@@ -1,8 +1,12 @@
-env
-**.pyc
-media
-.DS_Store
+*.log
+*.pot
+*.pyc
+__pycache__
 db.sqlite3
-.vscode/settings.json
+
+#
+*.env
+
+# Visual Studio Code #
+.vscode/*
 .history
-core/core/settings.py
