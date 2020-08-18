@@ -1,4 +1,4 @@
-from django.urls import pat
+from django.urls import path
 from Design_Site.views import *
 
 
