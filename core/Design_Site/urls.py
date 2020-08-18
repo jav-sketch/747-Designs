@@ -1,12 +1,11 @@
-from django.urls import path
-# from .views import *
-from . import views
+from django.urls import pat
+from Design_Site.views import *
 
 
 
 
 app_name = 'Design_Site'
 urlpatterns = [
-    path('', views.index, name='index')
-    # path('', Home.as_view(), name='home')
+    # path('', views.index, name='index')
+    path('', HomeView.as_view(), name="index")
 ]
