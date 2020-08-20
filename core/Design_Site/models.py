@@ -12,4 +12,25 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Product(models.Model):
+    # Category tuple
+    CATEGORY =(
+        ('BC', 'Business Card'),
+        ('BR', 'Brochure'),
+        ('FR', 'Flyer'),
+        ('PR', 'Poster'),
+        ('WI', 'Wedding Invitation'),
+        
+    )
+    name = models.CharField(max_length=200, null=True)
+    price = models.FloatField(null=True)
+    category = models.CharField(max_length=200, null=True, choices=CATEGORY)
+    description = models.TextField()
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
      
