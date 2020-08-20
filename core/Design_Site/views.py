@@ -16,7 +16,7 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['intros'] = Intro.objects.all()[:5]
+        context['intros'] = Intro.objects.all()[:1]
         return context
 
     

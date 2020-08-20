@@ -15,20 +15,25 @@
         </p>
       </div>
     </div>
+  </div>
+</div>
 
-    <!--Column of Text-->
+ <!--Column of Text-->
     <div class="container">
         <div class="row">
 
             <!--Text Col One-->
+            {% for intro in intros %}
             <div class="col-md-4">
                 <h1>
-                    Heading
+                    {{intro.title}}
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo voluptates laboriosam inventore, nostrum quibusdam natus odit molestiae necessitatibus cupiditate!
+                    {{intro.description}}
                 </p>
             </div>
+            {% endfor %}
+            
 
             <!--Text Col Two-->
             {% for intro in intros %}
@@ -43,6 +48,7 @@
             {% endfor %}
 
             <!--Text Col Three-->
+            {% for intro in intros %}
             <div class="col-md-4">
                 <h1>
                     Heading
@@ -51,13 +57,9 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo voluptates laboriosam inventore, nostrum quibusdam natus odit molestiae necessitatibus cupiditate!
                 </p>
             </div>
+            {% endfor %}
 
         </div>
     </div>
-
-   
-
-  </div>
-</div>
 
 {% endblock %}
