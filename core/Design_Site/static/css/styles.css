@@ -3,3 +3,7 @@
     height: 5px;
     margin: 0 auto;
 }
+
+.btn-round{
+    border-radius: 50px;
+}
