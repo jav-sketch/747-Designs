@@ -15,7 +15,16 @@
         </p>
       </div>
     </div>
-    <!--Column of Text-->
+    
+    <!--Heading Flexbox-->
+    <div class="col text-center">
+      <h1 class="display-2 text-capitalize text-muted mb-5">
+        <strong>what do we do?</strong>
+      </h1>
+      <div class="title-underline bg-warning"></div>
+    </div>
+
+    <!--Intros-->
     <div class="container">
         <div class="row">
 
@@ -25,37 +34,11 @@
                 <h1>
                     {{intro.title}}
                 </h1>
-                <p>
+                <p class="lead text-left">
                     {{intro.description}}
                 </p>
             </div>
-            {% endfor %}
-            
-
-            <!--Text Col Two-->
-            {% for intro in intros %}
-              <div class="col-md-4">
-                  <h1>
-                    {{intro.title}}
-                  </h1>
-                  <p>
-                    {{intro.description}}
-                  </p>
-              </div>
-            {% endfor %}
-
-            <!--Text Col Three-->
-            {% for intro in intros %}
-            <div class="col-md-4">
-                <h1>
-                    Heading
-                </h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat explicabo voluptates laboriosam inventore, nostrum quibusdam natus odit molestiae necessitatibus cupiditate!
-                </p>
-            </div>
-            {% endfor %}
-
+            {% endfor %} 
         </div>
     </div>
   </div>
