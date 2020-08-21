@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView
 
 from .models import *
 # Create your views here.
@@ -19,4 +19,3 @@ class HomeView(TemplateView):
         context['intros'] = Intro.objects.all()[:1]
         return context
 
-    
