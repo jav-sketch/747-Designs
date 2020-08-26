@@ -12,8 +12,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <!--main css file-->
+    <!--CSS FIles-->
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
 
     <title>{% block head_title %}{% endblock %}</title>
     <style>
@@ -42,13 +43,12 @@
       
       {% endblock %}
 
-     <!--Scripts--> 
-     {% include "scripts.html" %} 
-
-     {% block extra_scripts %}
-     {% endblock %}
-
      <!--footer--> 
     {% include 'footer.html' %}
+
+    <!--Scripts--> 
+     {% include "scripts.html" %}
+     {% block extra_scripts %}
+     {% endblock %}
   </body>
 </html>
