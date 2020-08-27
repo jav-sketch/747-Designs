@@ -108,6 +108,6 @@ body {
 /*
  * Footer
  */
-.mastfoot {
-    color: rgba(255, 255, 255, .5);
+.footer {
+    background-color: rgba(10, 255, 214, 0.979);
 }
