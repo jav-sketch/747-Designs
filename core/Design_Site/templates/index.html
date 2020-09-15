@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<section class="intro card py-4">
+<section class="intro py-4">
   <!--Heading Flexbox-->
   <div class="col text-center">
     <h1 class="text-uppercase text-muted mb-1">
@@ -50,30 +50,31 @@
 
 <section class="contentbody bg-light py-5">
   <div class="row">
-    <div class="card col-md-4 order-md-2 mb-4" style="width: 18rem">
-     <img src="..." class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">Side Bar</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
-        </div>
-    </div>
+       <div class="col-md-7">
+        <h2 class="featurette-heading text-muted">Featurette.</h2>
+      
+      </div>
+      <div class="col-md-5">
+        <div class="card mdl-shadow--4dp">
+          <img class="featurette-image img-fluid  mx-auto" src="img/jay.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <div class="card-body">
+            <h5 class="card-title text-capitalize text-muted d-flex justify-content-center">
+              Javon Browne
+            </h5>
 
-    <div class="col-md-8 order-md-1">
-      <h4 class="mb-3 ml-3">Content Body</h4>
-    </div>
+          </div>
+          <!-- card footer-->
+          <div class="card-footer bg-info d-flex justify-content-around">
+            <a href="#"><i class="fab fa-facebook fa-2x text-light"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x text-light"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x text-light"></i></a>
+            <a href="#"><i class="fab fa-google fa-2x text-light"></i></a>
+          </div>
+          <!-- end of card footer -->
+        </div>
+      </div>
   </div>
+
 </section>
 
 {% endblock %}
