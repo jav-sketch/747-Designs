@@ -6,12 +6,19 @@
   <div class="col">
     <div class="jumbotron">
       <div class="container">
-        <h1 class="display-4 text-muted font-weight-bold">747 Designs & Prints</h1>
+        <h1 class="display-4 text-muted font-weight-bold">
+          747 Designs & Prints
+        </h1>
         <h4 class="text-capitalize">
           Innovate Your Ideas and bring them to life!
         </h4>
         <p>
-          <a class="btn btn-outline-primary btn-lg btn-round" href="#" role="button">Learn more &raquo;</a>
+          <a
+            class="btn btn-outline-primary btn-lg btn-round"
+            href="#"
+            role="button"
+            >Learn more &raquo;</a
+          >
         </p>
       </div>
     </div>
@@ -33,28 +40,40 @@
       <!--Intro Col-->
       {% for intro in intros %}
       <div class="col-md-4">
-        <h1>
-          {{intro.title}}
-        </h1>
-        <p class="lead text-left">
-          {{intro.description}}
-        </p>
+        <h1>{{intro.title}}</h1>
+        <p class="lead text-left">{{intro.description}}</p>
       </div>
       {% endfor %}
     </div>
   </div>
 </section>
 
-<section class="contentbody py-5">
+<section class="contentbody bg-light py-5">
+  <div class="row">
+    <div class="card col-md-4 order-md-2 mb-4" style="width: 18rem">
+     <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Side Bar</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1 class="text-center">Content Body</h1>
-      </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3 ml-3">Content Body</h4>
     </div>
   </div>
-
 </section>
 
 {% endblock %}
