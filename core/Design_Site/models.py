@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 class Intro(models.Model):
     title = models.CharField(max_length=50, null=True)
-    description = models.CharField(max_length=500)
+    description = models.TextField(max_length=500)
 
     def __str__(self):
         return self.title
